@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Following is response...</title>
+</head>
+<body>
+
+<table border="3">
+    <thead>
+        <td>User Id</td>
+        <td>User Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>Country</td>
+        <td>Skills</td>
+        <td>Created</td>
+        <td>Updated</td>
+        <td>Text</td>
+
+    </thead>
+
+     {% for item in mylist %}
+    <tr>
+        <td>{{item.Id}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.Country}}</td>
+        <td>{{item.skills}}</td>
+        <td>{{item.created_at}}</td>
+        <td>{{item.updated_at}}</td>
+        <td>{{item.text}}</td>
+
+    </tr>
+  {% endfor %}
+
+</table>
+
+
+</body>
+</html>
